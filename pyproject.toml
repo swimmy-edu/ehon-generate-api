@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ehon-generate-api"
+version = "0.1.0"
+description = ""
+authors = ["swimmy001 <swimmy001@sai.co.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.12"
+openai = "^1.81.0"
+uvicorn = "^0.34.2"
+python-dotenv = "^1.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
