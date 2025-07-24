@@ -22,6 +22,7 @@ app.add_middleware(
         "https://ehon-generate-app-62032802168.asia-northeast1.run.app",
         "http://localhost:8080",
         "http://localhost:3000",
+        "http://localhost:5173",
         "http://127.0.0.1:3000",
     ],
     allow_credentials=True,
@@ -241,7 +242,7 @@ async def generate_image(request: ImageGenerationRequest, metadata: Dict[str, st
             "input": request.input,
             "tools": request.tools,
             "truncation": "auto",
-            "instructions": "画像には絶対に文字をいれないでください。背景は透過しないでください。",
+            "instructions": "すきまのない綺麗な背景にして。画像に文字を入れることは禁止。",
             "metadata": metadata
         }
         print(f"response_params: {response_params}")
